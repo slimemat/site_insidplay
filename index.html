@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>InsidPlay: Animação e Recreação para Festa Infantil, Casamentos e Eventos</title>
+    <meta name="description" content="⭐ A melhor animação para sua festa! Especialistas em recreação infantil, com oficinas de slime e pintura facial. Também atendemos casamentos e eventos corporativos. Peça seu orçamento!">
+    <meta name="keywords" content="animação de festa infantil, recreação infantil, festa infantil santo andré, recreação para casamento, evento corporativo, oficina de slime, pintura facial">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Custom scrollbar for a better look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FDB500;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e4a300;
+        }
+    </style>
+    <script>
+        // Custom Tailwind CSS Configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'insid-yellow': '#FDB500',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/100 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="h-10">
+                <!-- Espaço para o Logo -->
+                <img src="logo.png" alt="InsidPlay Logo" class="h-full w-auto">
+            </div>
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 font-semibold text-black">
+                <a href="#services" class="hover:text-insid-yellow transition-colors">Serviços</a>
+                <a href="#about" class="hover:text-insid-yellow transition-colors">Sobre Nós</a>
+                <a href="#gallery" class="hover:text-insid-yellow transition-colors">Galeria</a>
+                <a href="#contact" class="bg-insid-yellow text-black px-4 py-2 rounded-md hover:bg-yellow-400 transition-colors">Orçamento</a>
+            </nav>
+             <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <nav class="flex flex-col items-center space-y-4 p-4 text-black font-semibold border-t border-gray-200">
+                <a href="#services" class="hover:text-insid-yellow transition-colors mobile-link">Serviços</a>
+                <a href="#about" class="hover:text-insid-yellow transition-colors mobile-link">Sobre Nós</a>
+                <a href="#gallery" class="hover:text-insid-yellow transition-colors mobile-link">Galeria</a>
+                <a href="#contact" class="mt-4 bg-insid-yellow text-black px-6 py-2 rounded-md hover:bg-yellow-400 transition-colors mobile-link">Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center bg-gradient-to-b from-gray-900 via-black to-black pt-20 text-white">
+            <div class="container mx-auto text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-insid-yellow to-yellow-300">A Festa dos Sonhos</span><br> com a Animação da InsidPlay!
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                    Transformamos aniversários, casamentos e eventos corporativos em momentos inesquecíveis com recreação, oficinas criativas e muita alegria.
+                </p>
+                <a href="#contact" class="mt-8 inline-block bg-gradient-to-r from-insid-yellow to-yellow-500 text-black font-bold py-3 px-8 rounded-full text-lg shadow-lg shadow-yellow-500/20 hover:scale-105 transform transition-transform">
+                    Peça um Orçamento Agora!
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 text-black">Nossos Serviços de Recreação</h2>
+                <p class="text-insid-yellow font-semibold mb-12 text-lg">O carro-chefe são as festas infantis, mas a diversão é para todos!</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="torta.png" alt="Animação e Recreação" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-black">Animação e Recreação</h3>
+                            <p class="text-gray-600">Brincadeiras, gincanas e atividades com monitores experientes para todas as idades.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="slime.png" alt="Oficina de Slime" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-black">Oficina de Slime</h3>
+                            <p class="text-gray-600">A atividade favorita da garotada! Cada um cria seu slime colorido para levar para casa.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="pintura.png" alt="Pintura Facial" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-black">Pintura Facial Artística</h3>
+                            <p class="text-gray-600">Transformamos os pequenos em seus personagens favoritos com tintas atóxicas.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="espadas.png" alt="Escultura de Balões" class="w-full h-48 object-cover">
+                         <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-black">Escultura de Balões</h3>
+                            <p class="text-gray-600">Espadas, cachorrinhos e flores que criam lembrancinhas divertidas na hora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="relative py-20 bg-black/50 text-white">
+             <!-- Background Image with Overlay -->
+            <img src="painting.png" alt="Monitor da InsidPlay interagindo com crianças em um evento" class="absolute inset-0 w-full h-full object-cover -z-10">
+            <div class="absolute inset-0 bg-black/70 -z-10"></div>
+
+            <div class="container mx-auto px-4 text-center relative">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-12">Por que escolher a <span class="text-insid-yellow">InsidPlay</span>?</h2>
+                 <p class="max-w-3xl mx-auto text-gray-300 text-lg">
+                    Somos mais que animadores, somos criadores de memórias felizes. Com uma equipe apaixonada pelo que faz, garantimos segurança, profissionalismo e, claro, muita diversão. Cada detalhe da recreação é pensado para a faixa etária das crianças, proporcionando uma experiência única e inesquecível para seu filho e os convidados.
+                 </p>
+            </div>
+        </section>
+        
+        <!-- Other Events Section -->
+        <section id="other-events" class="py-20 bg-black text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Para Todas as Ocasiões</h2>
+                 <p class="text-insid-yellow font-semibold mb-8">Levamos nossa alegria também para...</p>
+                 <div class="flex flex-col md:flex-row justify-center items-center gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-2">Casamentos</h3>
+                        <p class="text-gray-400">Um espaço de recreação especial para as crianças se divertirem com segurança enquanto os adultos aproveitam a festa.</p>
+                    </div>
+                    <div class="w-1 h-16 bg-insid-yellow rounded-full hidden md:block"></div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-2">Eventos Corporativos</h3>
+                        <p class="text-gray-400">Atividades de team building, festas de confraternização e eventos para os filhos dos colaboradores. Energia e integração para sua equipe.</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Instagram Gallery Section -->
+        <section id="gallery" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 text-black">Momentos que Ficam na Memória</h2>
+                <p class="text-insid-yellow font-semibold mb-12 text-lg">Siga nossa alegria em @insidplay</p>
+                
+                <!-- ATENÇÃO: Cole o código do seu widget de feed do Instagram aqui -->
+                <!-- Ferramentas como LightWidget.com ou Elfsight.com podem gerar este código -->
+                <div class="w-full max-w-4xl mx-auto h-96 bg-gray-200 flex items-center justify-center rounded-lg shadow-lg">
+                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/insidplay/" data-instgrm-version="14" style="background:#FFF; border:0; margin: 0 auto; max-width:540px; width:calc(100% - 2px);">
+                        <a href="https://www.instagram.com/insidplay/" target="_blank" rel="noopener noreferrer">Ver perfil de @insidplay no Instagram</a>
+                        </blockquote>
+                </div>
+                 
+
+                <a href="https://www.instagram.com/insidplay/" target="_blank" class="mt-8 inline-block bg-gray-800 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-insid-yellow hover:text-black transition-colors">
+                    Visite nosso Perfil
+                </a>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="relative py-20">
+            <img src="monitores.png" alt="Monitores da insidplay posando para a foto" class="absolute inset-0 w-full h-full object-cover -z-10">
+            <div class="absolute inset-0 bg-black/70 -z-10"></div>
+
+            <div class="container mx-auto px-4 text-center relative text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Vamos planejar uma festa incrível?</h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+                    Entre em contato pelo WhatsApp para um orçamento rápido e sem compromisso. Estamos prontos para levar a melhor recreação para sua festa, seja ela qual for!
+                </p>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20animação%20de%20festa." target="_blank" class="inline-block bg-gradient-to-r from-green-500 to-green-400 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg shadow-green-500/30 hover:scale-105 transform transition-transform">
+                    <svg class="inline-block w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.357 1.846 6.096l-1.857 6.811 6.954-1.825z"/></svg>
+                    Falar no WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 text-white">
+        <div class="container mx-auto text-center p-6 text-gray-400">
+            <p>&copy; 2025 InsidPlay. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Sua melhor opção em <span class="font-semibold">animação e recreação para festas e eventos no ABC</span>.</p>
+        </div>
+    </footer>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
